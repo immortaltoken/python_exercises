@@ -5,14 +5,19 @@ import unittest
 class Bot():
 
     def __init__(self, owner_name):
+        """
+        WRITE YOUR CODE HERE
+        """
         self.owner_name = owner_name
 
     def reply(self, call):
+        """
+        WRITE YOUR CODE HERE
+        """
         if self.owner_name in call:
             return "Hello my Boss!"
         else:
             return "Hello"
-
 
 class TestBot(unittest.TestCase):
 
